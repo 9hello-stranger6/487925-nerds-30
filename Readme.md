@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Anastasia Zhuravleva](https://up.htmlacademy.ru/htmlcss/30/user/487925).
-* Наставник: `Неизвестно`.
+* Наставник: [Антон Савельев](https://htmlacademy.ru/profile/id1101501)
 
 ---
 
