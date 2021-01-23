@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>HTML Academy: Нёрдс</title>
+</head>
+<body>
+	<header>
+		<nav>
+			<a>	
+				<img src="img/nerds-logo.svg" width="160" height="66" alt="Логотип студии Нёрдс">
+			</a>
+			<ul>
+				<li><a href="blank.html">Студия</a></li>
+				<li><a href="blank.html">Клиенты</a></li>
+				<li><a href="catalog.html">Магазин</a></li>
+				<li><a href="blank.html">Контакты</a></li>
+			</ul>
+			<div>
+				<a href="blank.html">Корзина</a>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<section>
+			<h1>Магазин готовых шаблонов</h1>
+		</section>
+		<div>
+			<h2>Фильтр товаров</h2>
+			<form method="get" action="https://echo.htmlacademy.ru">
+				<fieldset>
+					<legend>Стоимость:</legend>
+					<!--здесь будет ползунок цены-->
+					<div>
+						<label>от<input name="min-price" type="text" value="0"></label>
+						<label>до<input name="max-price" type="text" value="15000"></label>
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Сетка:</legend>
+					<ul>
+						<li>
+							<label>
+								<input type="radio" name="grid" value="adaptive" checked="">
+								Адаптивная
+							</label>
+						</li>
+						<li>
+							<label>
+								<input type="radio" name="grid" value="fixed">
+								Фиксированная
+							</label>
+						</li>						
+						<li>
+							<label>
+								<input type="radio" name="grid" value="rubber">
+								Резиновая
+							</label>
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend>Особенности:</legend>
+					<ul>
+						<li>
+							<label>
+								<input type="checkbox" name="features" value="slider" checked="">
+								Слайдер
+							</label>
+						</li>
+						<li>
+							<label>
+								<input type="checkbox" name="features" value="advantages">
+								Блок преимуществ
+							</label>
+						</li>
+						<li>
+							<label>
+								<input type="checkbox" name="features" value="news" checked="">
+								Новости
+							</label>
+						</li>
+						<li>
+							<label>
+								<input type="checkbox" name="features" value="gallery">
+								Галерея
+							</label>
+						</li>
+						<li>
+							<label>
+								<input type="checkbox" name="features" value="basket">
+								Корзина
+							</label>
+						</li>
+					</ul>
+				</fieldset>
+				<button type="submit">Показать</button>
+			</form>
+		</div>
+		<section>
+			<h2>Предложения</h2>
+			<div>
+				<h2>Сортировать:</h2>
+				<ul>
+					<li><a href="#">По цене</a></li>
+					<li><a href="#">По типу</a></li>
+					<li><a href="#">По названию</a></li>
+				</ul>
+				<p>
+					<a href="#" aria-label="Ниже"></a>
+					<a href="#" aria-label="Выше"></a>
+				</p>
+			</div>
+			<div>
+				<div>
+					<a href="#">
+						<img src="img/pattern-sedona.svg" width="358" height="578" alt="Шаблон Sedona">
+					</a>
+					<div>
+						<a href="#"><h3>Sedona</h3></a>
+						<p>Информационный сайт для туристов</p>
+						<a href="#">9 900 руб.</a>
+					</div>
+				</div>
+				<div>
+					<a href="#">
+						<img src="img/pattern-pink.svg" width="358" height="578" alt="Шаблон Pink">
+					</a>
+					<div>
+						<a href="#"><h3>Pink App</h3></a>
+						<p>Продуктовый лендинг приложения для iOS и Android</p>
+						<a href="#">9 900 руб.</a>
+					</div>
+				</div>
+				<div>
+					<a href="#">
+						<img src="img/pattern-barbershop.svg" width="358" height="578" alt="Шаблон Barbershop">
+					</a>
+					<div>
+						<a href="#"><h3>Barbershop</h3></a>
+						<p>Сайт барбершопа.</p>
+						<a href="#">9 900 руб.</a>
+					</div>
+				</div>
+				<div>
+					<a href="#">
+						<img src="img/pattern-toy.svg" width="358" height="578" alt="Шаблон Mishka">
+					</a>
+					<div>
+						<a href="#"><h3>Mishka</h3></a>
+						<p>Интернет-магазин вязаных игрушек.</p>
+						<a href="#">9 900 руб.</a>
+					</div>
+				</div>
+				<div>
+					<a href="#">
+						<img src="img/pattern-aplus.svg" width="358" height="578" alt="Шаблон A+">
+					</a>
+					<div>
+						<a href="#"><h3>A Plus</h3></a>
+						<p>Лендинг курсов</p>
+						<a href="#">9 900 руб.</a>
+					</div>
+				</div>
+				<div>
+					<a href="#">
+						<img src="img/pattern-kvast.svg" width="358" height="578" alt="Шаблон Kvast">
+					</a>
+					<div>
+						<a href="#"><h3>Кваст</h3></a>
+						<p>Промо-сайт производителя крафтового кваса</p>
+						<a href="#">9 900 руб.</a>
+					</div>
+				</div>
+			</div>
+			<ul>
+				<li><a>1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">Следующая</a></li>
+			</ul>
+		</section>
+	</main>
+	<footer>
+		<section>
+			<h3>NЁRDS DESIGN STUDIO</h3>
+			<!-- Здесь будет карта -->
+			<p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8<br>тел.<a href="tel:+78122757575"></a>+7 (812) 275-75-75</p>
+			<button type="button">Напишите нам</button>
+		</section>
+		<section>
+			<h2>Давайте дружить, это выгодно!</h2>
+			<p>Скидка 10% для друзей из социальных сетей.</p>
+			<ul>
+				<li>
+					<a href="#">Вконтакте</a>
+				</li>
+				<li>
+					<a href="#">Фейсбук</a>
+				</li>
+				<li>
+					<a href="#">Инстаграм</a>
+				</li>
+			</ul>
+		</section>
+	</footer>
+</body>
+</html>
