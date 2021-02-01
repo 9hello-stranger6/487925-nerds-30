@@ -1,0 +1,260 @@
+@font-face {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	src: local("Roboto"),
+	url("/fonts/roboto.woff2") format("woff2"),
+	url("/fonts/roboto.woff") format("woff");
+}
+
+:root {
+	--basic-white: #FFFFFF;
+	--basic-extra-light: #888888;
+	--basic-dark: #EEEEEE;
+	--basic-red: #FB565A;
+	--basic-green: #00CA74;
+	--basic-yellow: #EFC849;
+	--basic-black: #000000;
+	--basic-gray: #283136;
+
+	--special-light-gray: #666666;
+	--special: #444444;
+}
+
+body {
+	min-width: 1440px;
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", "Arial", sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	color: var(--basic-gray);
+	text-transform: uppercase;
+	background-color: var(--basic-white);
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.main-navigation {
+	font-size: 16px;
+	line-height: 30px;
+	background-color: var(--basic-dark);
+}
+
+.site-nav {
+	list-style: none;
+}
+
+.site-nav a,
+.card a {
+	color: var(--basic-black);
+}
+
+.site-nav a:hover,
+.card a:hover {
+	color: var(--basic-red);
+}
+
+.site-nav a:focus,
+.card a:focus {
+	mix-blend-mode: normal;
+	opacity: 0.3;
+}
+
+.slider {
+	background-color: var(--basic-dark);
+}
+
+.slider-item {
+	list-style: none;
+}
+.slider-item h2 {
+	color: var(--basic-black);
+	font-size: 55px;
+	line-height: 55px;
+}
+
+.slider-item-button {
+	display: block;
+	max-width: 240px;
+	padding: 16px 0;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-radius: 3px;
+	color: var(--basic-white);
+	background-color: var(--basic-red);
+}
+
+.slider-item a:hover {
+	background-color: #E74246;
+}
+
+.slider-item a:focus {
+	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+	background-color: #D7373B;     /* я не знаю как сделать нужный эффект при нажатии на кнопку :( аналогично с последущими кнопками в коде */   
+}
+
+.services-list {
+	list-style: none;
+}
+
+.services-item h3 {
+	font-size: 24px;
+	line-height: 30px;
+	color: var(--basic-black);
+}
+
+.services-button {
+	max-width: 160px;
+	max-height: 50px;
+	padding: 17px 39px 15px 40px;
+	text-align: center;
+	text-transform: uppercase;
+	border: none;
+	color: var(--basic-white);
+	border-radius: 3px;
+}
+
+.services-button-1 {
+	background-color: var(--basic-red);
+
+}
+
+.services-button-1:hover {
+	background-color: #E74246;
+}
+
+.services-button-1:focus {
+	background-color: #D7373B;
+	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.services-button-2 {
+	background-color: var(--basic-green);
+}
+
+.services-button-2:hover {
+	background-color: #00BC6C;
+}
+
+.services-button-2:focus {
+	background-color: #00AA62;
+	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.services-button-3 {
+	background-color: var(--basic-yellow);
+
+}
+
+.services-button-3:hover {
+	background-color: #EAB534;
+}
+
+.services-button-3:focus {
+	background-color: #E5A722;
+	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.features h1 {
+	font-size: 45px;
+	line-height: 45px;
+	color: var(--basic-black);
+}
+
+.features h3 {
+	color: var(--basic-black);
+}
+
+.table-specifications th {
+	font-size: 45px;
+	line-height: 64px;
+	color: var(--basic-black);
+}
+
+.table-specifications td {
+	font-size: 16px;
+	line-height: 18px;
+}
+
+.clients-item {
+	list-style: none;
+}
+
+.footer-contacts h3 {
+	font-size: 18px;
+	line-height: 30px;
+	color: var(--basic-black);
+}
+
+.footer-contacts address, p {
+	font-size: 16px;
+	line-height: 18px;
+	color: var(--special-light-gray);
+}
+
+.footer-contacts button {
+	max-width: 219px;
+	max-height: 50px;
+	padding: 17px 44px 15px 44px;
+	text-align: center;
+	text-transform: uppercase;
+	border: none;
+	color: var(--basic-white);
+	background-color: var(--basic-red);
+	border-radius: 3px;
+}
+
+.footer-social h2 {
+	font-size: 36px;
+	line-height: 36px;
+	color: var(--basic-black);
+}
+
+.footer-social p {
+	font-size: 16px;
+	line-height: 22px;
+	color: var(--special);
+}
+
+.social-button {
+	list-style: none;
+}
+
+.social-button a {
+	color: inherit;
+	background-color: #E1E1E1;
+}
+
+.modal h2 {
+	font-size: 45px;
+	line-height: 53px;
+	color: var(--basic-black);
+}
+
+.modal p {
+	font-size: 16px;
+	line-height: 18px;
+	color: var(--basic-black);
+}
+
+.feedback-button {
+	max-width: 259px;
+	max-height: 50px;
+	padding: 17px 44px 15px 44px;
+	text-align: center;
+	text-transform: uppercase;
+	border: none;
+	color: var(--basic-white);
+	background-color: var(--basic-red);
+	border-radius: 3px;
+}
