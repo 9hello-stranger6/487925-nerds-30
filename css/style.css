@@ -30,7 +30,6 @@ body {
 	line-height: 24px;
 	font-weight: 400;
 	color: var(--basic-gray);
-	text-transform: uppercase;
 	background-color: var(--basic-white);
 }
 
@@ -49,7 +48,15 @@ img {
 	background-color: var(--basic-dark);
 }
 
-.site-nav {
+.site-nav,
+.slider-item,
+.services-list,
+.clients-item,
+.social-button,
+.filter-option,
+.catalog-sort,
+.catalog-list,
+.pagination-list {
 	list-style: none;
 }
 
@@ -73,10 +80,8 @@ img {
 	background-color: var(--basic-dark);
 }
 
-.slider-item {
-	list-style: none;
-}
-.slider-item h2 {
+.slider-item h2,
+.page-title {
 	color: var(--basic-black);
 	font-size: 55px;
 	line-height: 55px;
@@ -100,11 +105,7 @@ img {
 
 .slider-item a:focus {
 	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-	background-color: #D7373B;     /* я не знаю как сделать нужный эффект при нажатии на кнопку :( аналогично с последущими кнопками в коде */   
-}
-
-.services-list {
-	list-style: none;
+	background-color: #D7373B;   
 }
 
 .services-item h3 {
@@ -114,8 +115,6 @@ img {
 }
 
 .services-button {
-	max-width: 160px;
-	max-height: 50px;
 	padding: 17px 39px 15px 40px;
 	text-align: center;
 	text-transform: uppercase;
@@ -124,43 +123,42 @@ img {
 	border-radius: 3px;
 }
 
-.services-button-1 {
+.services-button-red {
 	background-color: var(--basic-red);
 
 }
 
-.services-button-1:hover {
+.services-button-red:hover {
 	background-color: #E74246;
 }
 
-.services-button-1:focus {
+.services-button-red:focus {
 	background-color: #D7373B;
 	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
-.services-button-2 {
+.services-button-green {
 	background-color: var(--basic-green);
 }
 
-.services-button-2:hover {
+.services-button-green:hover {
 	background-color: #00BC6C;
 }
 
-.services-button-2:focus {
+.services-button-green:focus {
 	background-color: #00AA62;
 	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
-.services-button-3 {
+.services-button-yellow {
 	background-color: var(--basic-yellow);
-
 }
 
-.services-button-3:hover {
+.services-button-yellow:hover {
 	background-color: #EAB534;
 }
 
-.services-button-3:focus {
+.services-button-yellow:focus {
 	background-color: #E5A722;
 	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
@@ -186,10 +184,6 @@ img {
 	line-height: 18px;
 }
 
-.clients-item {
-	list-style: none;
-}
-
 .footer-contacts h3 {
 	font-size: 18px;
 	line-height: 30px;
@@ -203,8 +197,6 @@ img {
 }
 
 .footer-contacts button {
-	max-width: 219px;
-	max-height: 50px;
 	padding: 17px 44px 15px 44px;
 	text-align: center;
 	text-transform: uppercase;
@@ -226,10 +218,6 @@ img {
 	color: var(--special);
 }
 
-.social-button {
-	list-style: none;
-}
-
 .social-button a {
 	color: inherit;
 	background-color: #E1E1E1;
@@ -248,8 +236,6 @@ img {
 }
 
 .feedback-button {
-	max-width: 259px;
-	max-height: 50px;
 	padding: 17px 44px 15px 44px;
 	text-align: center;
 	text-transform: uppercase;
@@ -257,4 +243,93 @@ img {
 	color: var(--basic-white);
 	background-color: var(--basic-red);
 	border-radius: 3px;
+}
+
+/*catalog*/
+
+.filters legend,
+.catalog h2 {
+	font-size: 18px;
+	line-height: 30px;
+	color: var(--basic-black);
+	text-transform: uppercase;
+}
+
+.filer-button {
+	padding: 17px 88px 15px 89px;
+	text-align: center;
+	text-transform: uppercase;
+	border: none;
+	color: var(--basic-black);
+	background-color: var(--basic-dark);
+	border-radius: 3px;
+}
+
+.filer-button:hover {
+	background-color: #DFDFDF;
+}
+
+.filer-button:focus {
+	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.catalog-sort a {
+	color: var(--basic-black);
+	text-transform: uppercase;
+}
+
+.catalog-item {
+	background-color: var(--basic-dark);
+}
+
+.catalog-item h3 {
+	font-size: 18px;
+	line-height: 30px;
+	color: var(--basic-black);
+	text-transform: uppercase;
+}
+
+.catalog-item h3:hover {
+	color: var(--basic-red);
+}
+
+.catalog-item p {
+	font-size: 16px;
+	line-height: 18px;
+	color: var(--special-light-gray);
+}
+
+.button-price {
+	display: block;
+	max-width: 200px;
+	padding: 16px 0;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-radius: 3px;
+	color: var(--basic-white);
+	background-color: var(--basic-red);
+}
+
+.button-price:hover {
+	background-color: #E74246;
+}
+
+.button-price:focus {
+	background-color: #D7373B;
+	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.pagination-item a {
+  color: var(--basic-black);
+  background-color: var(--basic-dark);
+}
+
+.pagination-item a:hover {
+background-color: #DFDFDF;
+}
+
+.pagination-item a:focus {
+	background-color: #D5D5D5;
+box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
