@@ -12,11 +12,13 @@
 </head>
 <body class="page-body inner-page">
     <header class="main-header">
-    	<nav class="main-navigation">
+    	<nav class="main-navigation"> 
+            <div class="main-navigation-wrapper">
     		<a class="main-header-logo">	
               <img src="img/nerds-logo.svg" width="160" height="66" alt="Логотип студии Нёрдс">
           </a>
-          <ul class="site-nav">
+         
+          <ul class= "site-nav list" >
               <li><a href="blank.html">Студия</a></li>
               <li><a href="blank.html">Клиенты</a></li>
               <li><a href="catalog.html">Магазин</a></li>
@@ -25,12 +27,13 @@
           <div class="card">
             <a class="card-link" href="blank.html">Корзина</a>
         </div>
+    </div>
     </nav>
 </header>
 <main class="container">
     <section class="slider">
-        <ul class="slider-list">
-            <li class="slider-item">
+        <ul class="slider-list list">
+            <li class="slider-item ">
                <img src="img/slide1.png" width="760" height="431" alt="">
                <h2>Долго, дорого,<br>скрупулезно.</h2>
                <p>Математически выверенный дизайн <br> для вашего сайта или мобильного приложения.</p>
@@ -56,7 +59,7 @@
   </div>            
 </section>     
 <section class="services">
-    <ul class="services-list">
+    <ul class="services-list list">
         <li class="services-item">
            <img src="img/illustration-1.svg" width="300" height="146" alt="Веб-сайты">
            <h3>Веб-сайты</h3>
@@ -78,14 +81,16 @@
 </ul>
 </section>
 <section class="features">
+    <div class="about-us">
     <h1 class="features-title">Мы — маленькая, но гордая<br>дизайн-студия из Краснодара.</h1>
     <h3>Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>превыше креатива. Работаем не покладая рук, как роботы.</h3>
     <p>Выполняем заказы на разработку:</p>
-    <ul class="features-list">
+    <ul class="features-list list">
         <li class="features-item">Веб-сайтов любой сложности</li>
         <li class="features-item">Мобильных приложений для iOS и Android</li>
         <li class="features-item">Слайдшоу и видео для корпоративных презентаций</li>
     </ul>
+</div>
     <div class="facts">
         <img src="img/nerds-illustration.svg" width="360" height="208" alt="Логотип студии Нёрдс">
         <h3>с 2004 года любим точность во всем:</h3>
@@ -109,7 +114,7 @@
 </section>
 <section class="clients">
     <h2>Наши клиенты</h2>
-    <ul class="clients-list">
+    <ul class="clients-list list">
         <li class="clients-item">
             <a href="https://htmlacademy.ru/intensive/htmlcss">
                 <img src="img/logo-html-academy.svg" width="199" height="68" alt="Логотип HTML Academy">
@@ -135,6 +140,7 @@
 </main>
 
 <footer class="main-footer">
+   <div class="container">
     <section class="footer-contacts">
         <!-- Здесь будет карта -->
         <h3>NЁRDS DESIGN STUDIO</h3>
@@ -143,9 +149,11 @@
         <button type="button">Напишите нам</button>
     </section>
     <section class="footer-social">
+        <div class="social-offer">
         <h2>Давайте дружить, это выгодно!</h2>
         <p>Скидка 10% для друзей из социальных сетей.</p>
-        <ul class="social-button">
+    </div>
+        <ul class="social-button list">
             <li>
                 <a class="social-button-vk" href="#">
                     <span>Вконтакте</span>
@@ -172,6 +180,7 @@
             </li>
         </ul>
     </section>
+</div>
 </footer>
 
 <section class="modal modal-feedback">

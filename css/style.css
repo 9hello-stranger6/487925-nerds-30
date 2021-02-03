@@ -31,6 +31,10 @@ body {
 	font-weight: 400;
 	color: var(--basic-gray);
 	background-color: var(--basic-white);
+	min-height: 100%;
+	display: grid;
+	grid-template-rows: min-content 1fr min-content;
+	align-content: start;
 }
 
 a {
@@ -43,20 +47,14 @@ img {
 }
 
 .main-navigation {
+	display: grid;
 	font-size: 16px;
 	line-height: 30px;
+	padding-top: 49px;
 	background-color: var(--basic-dark);
 }
 
-.site-nav,
-.slider-item,
-.services-list,
-.clients-item,
-.social-button,
-.filter-option,
-.catalog-sort,
-.catalog-list,
-.pagination-list {
+.list {
 	list-style: none;
 }
 
@@ -111,6 +109,7 @@ img {
 .services-item h3 {
 	font-size: 24px;
 	line-height: 30px;
+	text-transform: uppercase;
 	color: var(--basic-black);
 }
 
@@ -321,15 +320,87 @@ img {
 }
 
 .pagination-item a {
-  color: var(--basic-black);
-  background-color: var(--basic-dark);
+	color: var(--basic-black);
+	background-color: var(--basic-dark);
 }
 
 .pagination-item a:hover {
-background-color: #DFDFDF;
+	background-color: #DFDFDF;
 }
 
 .pagination-item a:focus {
 	background-color: #D5D5D5;
-box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+/* Grid */
+
+.page {
+	height: 100%;
+}
+
+.main-header-logo {
+	justify-self: start;
+}
+
+.site-nav {
+	margin: 0;
+	padding: 0;
+}
+
+.main-navigation-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr min-content;
+	width: 1160px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.slider {
+	display: grid;
+	width: 1160px;
+	margin: 0 auto;
+	padding: 0;
+}
+.container {
+	width: 1160px;
+	margin: 0 auto;
+	padding: 0 ;
+}
+
+.services {
+	margin-bottom: 80px;
+}
+
+.services-item {
+	text-align: left ;
+}
+
+.services-list {
+	margin-top: 80px;
+	margin-bottom: 80px;
+	padding: 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 100px;
+}
+
+.features {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+
+.clients-list {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	column-gap: 40px
+}
+
+.main-footer .container {
+	margin-top: 80px;
+	margin-bottom: 80px;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
 }
