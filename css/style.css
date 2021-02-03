@@ -351,18 +351,13 @@ img {
 .main-navigation-wrapper {
 	display: grid;
 	grid-template-columns: 1fr 1fr min-content;
-	width: 1160px;
-	margin: 0 auto;
-	padding: 0;
 }
 
 .slider {
 	display: grid;
-	width: 1160px;
-	margin: 0 auto;
-	padding: 0;
 }
-.container {
+
+.lining {
 	width: 1160px;
 	margin: 0 auto;
 	padding: 0 ;
@@ -398,9 +393,29 @@ img {
 	column-gap: 40px
 }
 
-.main-footer .container {
+.main-footer  {
 	margin-top: 80px;
 	margin-bottom: 80px;
 	display: grid;
 	grid-template-columns: 2fr 1fr;
+}
+
+/*catalog*/
+
+.page-catalog {
+	display: grid;
+	grid-template-columns: 260px 1fr;
+	align-content: start;
+}
+
+.page-title {
+	grid-column: 1 / -1;
+}
+
+.catalog-sort {
+	margin-bottom: 40px;
+}
+
+.catalog {
+	margin-left: 140px;
 }
