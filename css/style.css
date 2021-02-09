@@ -50,8 +50,20 @@ img {
 	display: grid;
 	font-size: 16px;
 	line-height: 30px;
+	text-transform: uppercase;
+	font-weight: bold; 
 	padding-top: 49px;
 	background-color: var(--basic-dark);
+}
+
+.main-header-logo {
+	width: 160px;
+	height: 66px;
+}
+
+.main-navigation-wrapper {
+	display: flex;
+	justify-content: space-between;
 }
 
 .list {
@@ -124,7 +136,6 @@ img {
 
 .services-button-red {
 	background-color: var(--basic-red);
-
 }
 
 .services-button-red:hover {
@@ -162,14 +173,27 @@ img {
 	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
-.features h1 {
+.about-us {
+	width: 760px;
+}
+
+.features-title {
 	font-size: 45px;
 	line-height: 45px;
 	color: var(--basic-black);
 }
 
-.features h3 {
-	color: var(--basic-black);
+.about-us h3 {
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.features-list p {
+	text-transform: uppercase;
+	font-style: normal;
+	font-weight: bold;
+	color: #283136;
 }
 
 .table-specifications th {
@@ -272,6 +296,13 @@ img {
 	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
+.catalog-list  {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 0;
+}
+
 .catalog-sort a {
 	color: var(--basic-black);
 	text-transform: uppercase;
@@ -279,6 +310,14 @@ img {
 
 .catalog-item {
 	background-color: var(--basic-dark);
+	width: 360px;
+	min-height: 576px;
+	margin-right: 40px;
+	margin-bottom: 30px;
+}
+
+.catalog-item:nth-child(2n) {
+	margin-right: 0;
 }
 
 .catalog-item h3 {
@@ -286,6 +325,7 @@ img {
 	line-height: 30px;
 	color: var(--basic-black);
 	text-transform: uppercase;
+	margin-top: 26px;
 }
 
 .catalog-item h3:hover {
@@ -296,6 +336,12 @@ img {
 	font-size: 16px;
 	line-height: 18px;
 	color: var(--special-light-gray);
+}
+
+.catalog-item-image {
+	width: 358px;
+	height: 578px;
+	margin: 0;
 }
 
 .button-price {
@@ -331,6 +377,32 @@ img {
 .pagination-item a:focus {
 	background-color: #D5D5D5;
 	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.filters {
+	width: 260px;
+}
+
+.filters fieldset {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 30px;
+	border: none;
+}
+
+.filters legend {
+	margin-bottom: 13px;
+	font-size: 18px;
+	line-height: 30px;
+	color: var(--basic-black);
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.filter ul {
+	padding: 0;
+	margin: 0;
+	line-height: 19px;
 }
 
 /* Grid */
