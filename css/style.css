@@ -98,9 +98,6 @@ img {
 
 .cart-nav li {
 	padding: 20px 0px 20px 20px;
-	position: relative;
-
-	padding-left: 40px;
 }
 
 .site-nav a,
@@ -120,14 +117,12 @@ img {
 	opacity: 0.3;
 }
 
-.cart-nav li::before {
+.cart a:before {
 	content: '';
 	position: absolute;
-	top: 7px;
-	left: 0;
 	width: 15px;
 	height: 15px;
-	background-image: url("..img/cart-icon.svg");    /*---не появляется иконка корзины, не понимаю почему :( ---*/
+	background-image: url(..img/cart-icon.svg);    /*---не появляется иконка корзины, не понимаю почему :( ---*/
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
