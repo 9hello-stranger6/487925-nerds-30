@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<title>HTML Academy: Нёрдс</title>
 	<link href="normalize.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="css/style.css">
 	<link rel="icon" href="favicon.ico">
 	<link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
 	<link rel="apple-touch-icon" href="img/favicon-180.png">
@@ -24,7 +24,7 @@
 					<li><a class="site-nav-link" href="blank.html">Контакты</a></li>
 				</ul>
 				<ul class="cart-nav list">
-					<li class="cart"><a class="cart-nav-link" href="#">Корзина</a></li>
+					<li class="cart"><a class="cart-nav-link">Корзина</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -37,7 +37,7 @@
 		</section>
 		<div class="catalog wrapper-content">
 			<section class="catalog-filter">
-				<form action="https://echo.htmlacademy.ru" method="post">
+				<form action="https://echo.htmlacademy.ru" method="post" target="_blank">
 					<fieldset class="filter-item">
 						<legend>Стоимость:</legend>
 						<div class="range-filter">
@@ -45,8 +45,8 @@
 								<div class="scale">
 									<div class="bar"></div>
 								</div>
-								<div class="toggle toggle-min"></div>
-								<div class="toggle toggle-max"></div>
+								<div class="toggle toggle-min" tabindex="0"></div>
+								<div class="toggle toggle-max" tabindex="0"></div>
 							</div>
 							<div class="price-controls">
 								<label class="min-price">от <input name="min-price" type="text" value="0"></label>
@@ -127,9 +127,9 @@
 				<div class="catalog-sorting">
 					<h2>Сортировать:</h2>
 					<ul class="sort-list list">
-						<li><a class="sort-list-item sort-list-item--active" href="#">По цене</a></li>
-						<li><a class="sort-list-item" href="#">По типу</a></li>
-						<li><a class="sort-list-item" href="#">По названию</a></li>
+						<li><a class="sort-list-item sort-list-item--active">По цене</a></li>
+						<li><a class="sort-list-item">По типу</a></li>
+						<li><a class="sort-list-item">По названию</a></li>
 					</ul>
 					<p class="sort-list-updown">
 						<a class="sort-list-down" href="#" aria-label="Ниже"></a>
