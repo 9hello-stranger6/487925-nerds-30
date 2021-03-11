@@ -96,14 +96,12 @@ img {
 	min-height: 66px;
 }
 
-.main-header-logo:hover,
-.main-header-logo:focus {
-	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+.main-header-logo:hover {
+	opacity: 0.7;
 }
 
-.main-header-logo:focus {
+.main-header-logo:active {
 	opacity: 0.3;
-	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .main-navigation-wrapper {
@@ -338,13 +336,13 @@ img {
 	font-size: 16px;
 	line-height: 24px;
 	padding: 0;
-	margin-bottom: 27px;
+	margin-bottom: 45px;
 	color: var(--basic-gray);
 }
 
 .services-list {
 	margin-top: 80px;
-	margin-bottom: 80px;
+	margin-bottom: 90px;
 	padding: 0;
 	text-align: left ;
 	display: grid;
@@ -422,6 +420,7 @@ img {
 .features {
 	display: flex;
 	border-top: 2px solid var(--basic-dark);
+
 }
 
 .about-us {
@@ -453,7 +452,7 @@ img {
 	text-transform: uppercase;
 	font-style: normal;
 	font-weight: bold;
-	margin-top: 45px;
+	margin-top: 40px;
 	margin-bottom: 25px;
 	color: var(--basic-gray);
 }
@@ -477,7 +476,7 @@ img {
 .facts {
 	margin-top: 40px;
 	margin-left: 40px;
-	margin-bottom: 80px;
+	margin-bottom: 78px;
 }
 
 .facts h3 {
@@ -519,13 +518,35 @@ img {
 
 .clients-item {
 	position: relative;
-	padding-top: 60px;
-	padding-bottom: 23px;
+	padding-top: 0px;
+	padding-bottom: 38px;
+	
+}
+
+.clients-item:nth-child(2) {
+	padding-top: 45px;
+}
+
+.clients-item:nth-child(1) {
+	padding-top: 62px;
+
+}
+
+.clients-item:nth-child(4) {
+	padding-top: 50px;
+	padding-right: px;
+	padding-left: 10px;
+}
+
+.clients-item:nth-child(3) {
+	padding-top: 65px;
+	padding-right: 10px;
+	padding-left:10px;
 }
 
 .clients-item:after {
 	position: absolute;
-	top: -20px;
+	top: 0px;
 	right: -50px;
 	bottom: 0;
 	width: 2px;
