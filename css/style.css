@@ -1,12 +1,13 @@
-@font-face {
+/*@font-face {
 	font-family: "Roboto";
 	font-style: normal;
 	font-weight: 400;
+	font-weight: 500;
 	src: local("Roboto"),
 	url("/fonts/roboto.woff2") format("woff2"),
-	url("/fonts/roboto.woff") format("woff");
+	url("/fonts/roboto.woff") format("woff");         отключила это и поключила штрифт с гугла
 }
-
+*/
 :root {
 	--basic-white: #FFFFFF;
 	--basic-extra-light: #888888;
@@ -114,7 +115,7 @@ img {
 	padding: 0;
 	display: flex;
 	flex-wrap: wrap;
-	flex-basis: 440px;
+	flex-basis: 450px;
 }
 
 .cart-nav {
@@ -125,11 +126,11 @@ img {
 }
 
 .site-nav li {
-	padding-right: 40px;
+	padding-right: 45px;
 	padding-top: 27px;
 }
 
-.site-nav li:last-child{
+.site-nav li:last-child {
 	padding-right: 0;
 }
 
@@ -141,7 +142,8 @@ img {
 .cart-nav a {
 	color: var(--basic-black);
 	display: block;
-	padding-bottom: 4px;
+	padding-bottom: 5px;
+	font-weight: 500;
 }
 
 .site-nav-link:hover,
@@ -280,7 +282,9 @@ img {
 .slider-item h2 {
 	font-size: 55px;
 	line-height: 55px;
+	font-weight: 500;
 	margin: 0;
+	margin-bottom: 7px;
 	padding: 0;
 	color: var(--basic-black);
 }
@@ -326,8 +330,8 @@ img {
 	font-size: 24px;
 	line-height: 30px;
 	padding: 0;
-	margin-top: 20px;
-	margin-bottom: 15px;
+	margin-top: 18px;
+	margin-bottom: 9px;
 	text-transform: uppercase;
 	color: var(--basic-black);
 }
@@ -336,13 +340,13 @@ img {
 	font-size: 16px;
 	line-height: 24px;
 	padding: 0;
-	margin-bottom: 45px;
+	margin-bottom: 46px;
 	color: var(--basic-gray);
 }
 
 .services-list {
 	margin-top: 80px;
-	margin-bottom: 90px;
+	margin-bottom: 92px;
 	padding: 0;
 	text-align: left ;
 	display: grid;
@@ -354,7 +358,8 @@ img {
 	font-size: 16px;
 	line-height: 18px
 	width: 160px;
-	padding: 17px 39px 15px 40px;
+	height: 50px;
+	padding: 15px 40px 15px 40px;
 	text-align: center;
 	text-transform: uppercase;
 	font-weight: normal;
@@ -420,7 +425,6 @@ img {
 .features {
 	display: flex;
 	border-top: 2px solid var(--basic-dark);
-
 }
 
 .about-us {
@@ -431,16 +435,17 @@ img {
 .about-us h1 {
 	font-size: 45px;
 	line-height: 45px;
+	font-weight: 500;
 	margin: 0;
 	padding: 0;
 	color: var(--basic-black);
 }
 
 .about-us h3 {
-	margin-top: 35px;
-	font-weight: normal;
+	margin-top: 33px;
 	font-size: 16px;
 	line-height: 24px;
+	font-weight: normal;
 }
 
 .features-list {
@@ -450,23 +455,22 @@ img {
 .features-list p {
 	padding: 0;
 	text-transform: uppercase;
-	font-style: normal;
-	font-weight: bold;
-	margin-top: 40px;
-	margin-bottom: 25px;
+font-weight: bold;
+	margin-top: 41px;
+	margin-bottom: 5px;
 	color: var(--basic-gray);
 }
 
 .features-item {
-	margin-top: 25px;
-	padding-left: 35px;
+	margin-top: 24px;
+	padding-left: 36px;
 	position: relative;
 }
 
 .features-item:before {
 	position: absolute;
 	top: 10px;
-	left: -1px;
+	left: 1px;
 	width: 25px;
 	height: 2px;
 	content: '';
@@ -474,29 +478,46 @@ img {
 }
 
 .facts {
-	margin-top: 40px;
+	margin-top: 39px;
 	margin-left: 40px;
-	margin-bottom: 78px;
+	margin-bottom: 70px;
 }
 
 .facts h3 {
 	margin-top: 30px;
-	margin-left: 5px;
+	margin-left: 17px;
+	margin-bottom: 18px;
 	font-size: 16px;
 	line-height: 24px;
 	color: var(--basic-black);
 	text-transform: uppercase;
 }
 
+.table-specifications {
+	margin-left: -2px;
+	flex-basis: 350px;
+}
+
 .table-specifications th {
+	padding-right: 20px;
+	text-align: left;
 	font-size: 45px;
 	line-height: 64px;
 	color: var(--basic-black);
 }
 
+.table-specifications th nth child(3) {
+	padding-right:0px;
+}
+
+.table-specifications sup {
+	font-size: 26px;
+}
+
 .table-specifications td {
 	font-size: 16px;
 	line-height: 18px;
+	padding-top: 10px;
 }
 
 /*clients - flex*/
@@ -508,7 +529,6 @@ img {
 
 .clients-list {
 	display: flex;
-	margin: 0;
 	margin-right: 44px;
 	margin-left: 30px;
 	padding: 0;
@@ -518,30 +538,26 @@ img {
 
 .clients-item {
 	position: relative;
-	padding-top: 0px;
-	padding-bottom: 38px;
-	
-}
-
-.clients-item:nth-child(2) {
-	padding-top: 45px;
+	padding-bottom: 17px;
 }
 
 .clients-item:nth-child(1) {
-	padding-top: 62px;
-
+	padding-top: 47px;
 }
 
-.clients-item:nth-child(4) {
-	padding-top: 50px;
-	padding-right: px;
-	padding-left: 10px;
+.clients-item:nth-child(2) {
+	padding-top: 30px;
 }
 
 .clients-item:nth-child(3) {
-	padding-top: 65px;
+	padding-top: 50px;
 	padding-right: 10px;
-	padding-left:10px;
+	padding-left: 10px;
+}
+
+.clients-item:nth-child(4) {
+	padding-top: 38px;
+	padding-left: 10px;
 }
 
 .clients-item:after {
@@ -581,7 +597,7 @@ img {
 	height: 416px;
 	background-color: var(--basic-map);
 	justify-content: center;
-	margin-top: 80px;
+	margin-top: 86px;
 }
 
 .map-wrapper img {
@@ -684,7 +700,8 @@ img {
 
 .footer-social {
 	display: flex;
-	margin: 72px auto;
+	margin: 67px auto;
+	padding-right: 4px;
 }
 
 .footer-social a {
@@ -704,6 +721,7 @@ img {
 	padding: 0;
 	flex-wrap: wrap;
 }
+
 .footer-social li {
 	margin-right: 10px;
 }
@@ -762,6 +780,7 @@ img {
 }
 
 .footer-discount b {
+	letter-spacing: 0.01em;;
 	font-size: 36px;
 	font-weight: 700;
 	line-height: 36px;
