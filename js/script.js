@@ -81,6 +81,6 @@ window.addEventListener("keydown", function (evt) {
     if (mapPopup.classList.contains("modal-show")) {
       evt.preventDefault();
       mapPopup.classList.remove("modal-show");
-    }
   }
+}
 });
